@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap");
+
+/* General Style Resettings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Genaeral Main Styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  background-color: #ecf0f1;
+  color: #0d131a;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.page-section-title {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+.page-section-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Page Header Section Styles */
+.page-header-section {
+  background: linear-gradient(
+      90deg,
+      rgba(244, 244, 244, 0.8) 0%,
+      rgba(244, 244, 244, 0.8) 100%
+    ),
+    url("image/header\ section\ background.jpg");
+  height: 50vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.page-header-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 60%;
+}
+.page-header-title {
+  text-transform: capitalize;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.page-header-description {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Page About Section Styles */
+.page-about-section {
+  padding: 4rem 0;
+}
+.about-container-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: center;
+}
+.about-grid-item {
+  width: 100%;
+}
+.about-grid-item img {
+  display: block;
+  width: 100%;
+}
+
+/* Page Counter Section Styles */
+.page-counter-section {
+  padding: 4rem 0;
+  background-color: #7f8c8d;
+  color: #f4f4f4;
+  text-align: center;
+}
+.counter-container-header {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.counter-container-header .page-section-description {
+  text-align: center;
+}
+.counter-container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 1rem;
+}
+
+/* Counter Item */
+.counter-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.counter-item i {
+  margin: 1rem 0;
+}
+.data-counter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+.counter-description {
+  text-transform: capitalize;
+}
+
+/* Page footer section  */
+.page-footer-section {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.footer-link {
+  color: #0d131a;
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: #7f8c8d;
+}
+
+/* Page Responsive Seittings */
+@media (max-width: 864px) {
+  /* Genaeral Main Styles */
+  body {
+    font-size: 0.8rem;
+  }
+  .container {
+    width: 90%;
+  }
+  .page-section-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .page-section-description {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  /* Page Header Section Styles */
+  .page-header-section .container {
+    width: 90%;
+  }
+  .page-header-title {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  .page-header-description {
+    font-size: 1rem;
+  }
+
+  /* Page About Section Styles */
+  .page-about-section {
+    padding: 3rem 0;
+  }
+  .about-container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem;
+  }
+
+  /* Page Counter Section Styles */
+  .page-counter-section {
+    padding: 3rem 0;
+  }
+  .counter-container-header {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .counter-container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.8rem;
+  }
+
+  /* Counter Item */
+  .counter-item i {
+    margin: 0.8rem 0;
+  }
+  .data-counter {
+    font-size: 1rem;
+    margin: 0.8rem;
+  }
+
+  /* Page footer section  */
+  .page-footer-section {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}
